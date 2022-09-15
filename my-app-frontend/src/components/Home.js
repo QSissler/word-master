@@ -66,6 +66,23 @@ function Home() {
 
   return (
     <div>
+      <div className="wrapper">
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      </div>
       {isLoggedIn ? (
         <Game
           currentUser={currentUser}
