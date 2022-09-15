@@ -8,6 +8,7 @@ function Home() {
   const [userName, setUsername] = useState("");
   const [currentGame, setCurrentGame] = useState([]);
   const [allUsers, setAllUsers] = useState([]);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   function createUser(e) {
     e.preventDefault();
@@ -44,6 +45,8 @@ function Home() {
     })
       .then((res) => res.json())
       .then((data) => setCurrentGame(data));
+
+    setIsLoggedIn(true);
   }
 
   useEffect(() => {
@@ -63,30 +66,35 @@ function Home() {
 
   return (
     <div>
-      <h2>Welcome to the WordMaster game</h2>
-      <h4>Enter your name to start playing</h4>
-      <h3>Returning user?</h3>
-      <select onChange={(e) => handleChangeUsers(e)}>
-        <option></option>
-        {allUsers.map((user) => (
-          <option key={user.id}>{user.name}</option>
-        ))}
-      </select>
-      <form onSubmit={(e) => createUser(e)}>
-        <input
-          value={userName}
-          onChange={(e) => setUsername(e.target.value)}
-          type="text"
-          placeholder="Type your name..."
-        ></input>
-        <button type="submit">Create User</button>
-      </form>
-      <button onClick={createGame}>Start Playing</button>
-      <Game
-        currentUser={currentUser}
-        currentGame={currentGame}
-        updateGame={updateGame}
-      />
+      {isLoggedIn ? (
+        <Game
+          currentUser={currentUser}
+          currentGame={currentGame}
+          updateGame={updateGame}
+        />
+      ) : (
+        <div>
+          <h2>Welcome to the WordMaster game</h2>
+          <h4>Enter your name to start playing</h4>
+          <h3>Returning user?</h3>
+          <select onChange={(e) => handleChangeUsers(e)}>
+            <option></option>
+            {allUsers.map((user) => (
+              <option key={user.id}>{user.name}</option>
+            ))}
+          </select>
+          <form onSubmit={(e) => createUser(e)}>
+            <input
+              value={userName}
+              onChange={(e) => setUsername(e.target.value)}
+              type="text"
+              placeholder="Type your name..."
+            ></input>
+            <button type="submit">Create User</button>
+          </form>
+          <button onClick={createGame}>Start Playing</button>
+        </div>
+      )}
     </div>
   );
 }
