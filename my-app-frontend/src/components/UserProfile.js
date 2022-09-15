@@ -2,11 +2,13 @@ import React, { useContext, useEffect, useState } from "react";
 import { UserContext } from "../Context/UserProvider";
 import GameCard from "./GameCard";
 import NameForm from "./NameForm";
+import { useHistory } from "react-router-dom"
 
 function UserProfile() {
   let [currentUser, setCurrentUser] = useContext(UserContext);
   const [currentUserGames, setCurrentUserGames] = useState([]);
   const [showForm, setShowForm] = useState(false);
+  let history = useHistory();
 
   function handleDeleteUser() {
     fetch(`http://localhost:9292/users/${currentUser.id}`, {
@@ -14,6 +16,7 @@ function UserProfile() {
     });
     alert("Your profile was deleted!");
     setCurrentUser([]);
+    history.push("/")
   }
 
   useEffect(() => {

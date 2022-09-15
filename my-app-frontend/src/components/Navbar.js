@@ -6,10 +6,10 @@ function NavBar() {
       <NavLink exact to="/">
         Home
       </NavLink>
-      <NavLink exact to="/MyProfile">
+      <NavLink exact to="/myProfile">
         My Profile
       </NavLink>
-      <NavLink exact to="/TopScores">
+      <NavLink exact to="/topScores">
         Top Scores
       </NavLink>
     </nav>

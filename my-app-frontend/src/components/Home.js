@@ -28,6 +28,7 @@ function Home() {
       .then((data) => setCurrentUser(data));
 
     setUsername("");
+    alert("New user has been created!");
   }
 
   function createGame() {

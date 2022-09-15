@@ -29,7 +29,7 @@ class UsersController < ApplicationController
 
     delete "/users/:id" do
         old_User = User.find(params[:id])
-        old_User.deleteAllGames
+        # old_User.deleteAllGames
         old_User.destroy
         status 204
     end

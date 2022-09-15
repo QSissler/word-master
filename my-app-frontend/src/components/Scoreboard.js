@@ -11,12 +11,15 @@ function ScoreBoard({ currentGame }) {
         style={{
           textDecoration: "none",
           color: "#103258",
+          border: "solid #103258",
+          padding: "10px",
+          backgroundColor: "white"
         }}
         className="navLink"
         exact
         to="/myProfile"
       >
-        To see your results click here
+        To see your results click here!
       </NavLink>
     </div>
   );
