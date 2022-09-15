@@ -5,8 +5,5 @@ class User < ActiveRecord::Base
     self.games
   end
 
-  # def deleteAllGames
-  #   self.games.destroy_all
-  # end
 
 end

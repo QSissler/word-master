@@ -22,10 +22,6 @@ class GamesController < ApplicationController
         results.to_json
     end
 
-    # get "/topScores" do 
-    #     games = Game.orderedScores
-    #     games.to_json
-    # end
 
     get "/topUsers" do 
         users = Game.getUsersNames

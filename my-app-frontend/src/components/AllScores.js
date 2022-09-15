@@ -4,8 +4,6 @@ import ScoreTable from "./ScoreTable";
 function AllScores() {
   const [allScores, setAllScores] = useState([]);
 
-  console.log(allScores)
-
   useEffect(() => {
     fetch("http://localhost:9292/topScores")
       .then((res) => res.json())

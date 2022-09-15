@@ -4,7 +4,6 @@ import { UserContext } from "../Context/UserProvider";
 
 function Home() {
   let [currentUser, setCurrentUser] = useContext(UserContext);
-  // const [currentUser, setCurrentUser] = useState([]);
   const [userName, setUsername] = useState("");
   const [currentGame, setCurrentGame] = useState([]);
   const [allUsers, setAllUsers] = useState([]);
