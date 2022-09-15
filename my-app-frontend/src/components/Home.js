@@ -75,37 +75,54 @@ function Home() {
       ) : (
         <div>
           <div className="header">
-          <h1>Become The Next Word Master!</h1>
-          <p style={{lineHeight:"2"}} >Do you like learning new vocabulary in English? We have lots of great word games for you to play. <br></br> You can choose from lots of different topics and have fun playing games and learning English at the same time.</p>
-         </div>
-         <div className="userBlock">
-          <div className="user">
-          <h3>Returning User?</h3>
-          <h4>Find Your Name</h4>
-          <select onChange={(e) => handleChangeUsers(e)}>
-            <option></option>
-            {allUsers.map((user) => (
-              <option key={user.id}>{user.name}</option>
-            ))}
-          </select> 
+            <h1>Become The Next Word Master!</h1>
+            <p style={{ lineHeight: "2" }}>
+              Do you like learning new vocabulary in English? We have lots of
+              great word games for you to play. <br></br> You can choose from
+              lots of different topics and have fun playing games and learning
+              English at the same time.
+            </p>
           </div>
-          <div className="user">
-          <h3>New User?</h3>
-          <h4>Enter Your Name</h4>
-          <form onSubmit={(e) => createUser(e)}>
-            <input
-              value={userName}
-              onChange={(e) => setUsername(e.target.value)}
-              type="text"
-              placeholder="Type your name..."
-            ></input>
-            <br></br>
-            <button style={{marginTop: "15px"}} type="submit">Create User</button>
-          </form>
-          </div>
+          <div className="userBlock">
+            <div className="user">
+              <h3>Returning User?</h3>
+              <h4>Find Your Name</h4>
+              <div className="select">
+                <select onChange={(e) => handleChangeUsers(e)}>
+                  <option></option>
+                  {allUsers.map((user) => (
+                    <option key={user.id}>{user.name}</option>
+                  ))}
+                </select>
+                <div className="select_arrow"></div>
+              </div>
+            </div>
+            <div className="user">
+              <h3>New User?</h3>
+              <h4>Enter Your Name</h4>
+              <form onSubmit={(e) => createUser(e)}>
+                <input
+                  className="input1"
+                  value={userName}
+                  onChange={(e) => setUsername(e.target.value)}
+                  type="text"
+                  placeholder="Type your name..."
+                ></input>
+                <br></br>
+                <button
+                  className="userButtons"
+                  style={{ marginTop: "15px" }}
+                  type="submit"
+                >
+                  Create User
+                </button>
+              </form>
+            </div>
           </div>
           <div className="playButton">
-          <button className="startButton" onClick={createGame}>Start Playing</button>
+            <button className="startButton" onClick={createGame}>
+              Start Playing
+            </button>
           </div>
         </div>
       )}

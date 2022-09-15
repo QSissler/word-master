@@ -28,18 +28,22 @@ function UserProfile() {
 
   return (
     <div>
-      <h1 style={{textAlign:"center"}}>Hi {currentUser.name}!</h1>
+      <h1 style={{ textAlign: "center" }}>Hi {currentUser.name}!</h1>
       <div className="profileButtons">
-      {showForm ? <NameForm handleShowForm={handleShowForm} /> : null}
-      <button onClick={handleShowForm}>
-        {showForm ? "Keep My Name" : "Edit Your Name"}
-      </button>
-      <button onClick={handleDeleteUser}>Delete Your Profile</button>
+        {showForm ? <NameForm handleShowForm={handleShowForm} /> : null}
+        <button className="userButtons" onClick={handleShowForm}>
+          {showForm ? "Keep My Name" : "Edit Your Name"}
+        </button>
+        {showForm ? null : (
+          <button className="userButtons" onClick={handleDeleteUser}>
+            Delete Your Profile
+          </button>
+        )}
       </div>
       <div className="allResults">
-      {currentUserGames.map((game) => (
-        <GameCard key={game.id} game={game} />
-      ))}
+        {currentUserGames.map((game) => (
+          <GameCard key={game.id} game={game} />
+        ))}
       </div>
     </div>
   );

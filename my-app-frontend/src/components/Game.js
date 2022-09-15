@@ -69,22 +69,31 @@ function Game({ currentGame, updateGame, currentUser }) {
 
   let buttons = randomFourWords.map((word) => {
     return (
-      <button key={word.id} onClick={(e) => handleClickButton(e)}>
+      <button
+        className="eachButton userButtons"
+        key={word.id}
+        onClick={(e) => handleClickButton(e)}
+      >
         {word.word}
       </button>
     );
   });
 
   return (
-    <div>
+    <div className="game">
       {gameOver ? (
         <ScoreBoard currentGame={currentGame} />
       ) : (
         <div>
-          <h2>{currentUser.name} is playing</h2>
-          <h3>Score: {currentGame.score}</h3>
-          {<img src={currentImage.image_url}></img>}
-          {buttons}
+          <h3 className="instructions">
+            Click on the word that matches the picture!
+          </h3>
+          <h1>{currentUser.name} is playing</h1>
+          <h3 className="scoreText">Score: {currentGame.score}</h3>
+          <div className="gameBlock">
+            {<img className="gameImage" src={currentImage.image_url}></img>}
+            <div className="gameButtons">{buttons}</div>
+          </div>
         </div>
       )}
     </div>

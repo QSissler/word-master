@@ -9,15 +9,15 @@ function GameCard({ game }) {
       .then(setGameWords);
   }, []);
 
-
   return (
     <div className="gameResults">
-      <h4>Game Results</h4>
+      <h4 className="gameCardText">Game Results</h4>
+      <p></p>
       {gameWords.map((pair) =>
         pair[1] ? (
-          <p style={{ color: "green" }}>{pair[0]}</p>
+          <p style={{ color: "#0f7c25", fontWeight: "bold" }}>{pair[0]}</p>
         ) : (
-          <p style={{ color: "red" }}>{pair[0]}</p>
+          <p style={{ color: "#ba0e07", fontWeight: "bold" }}>{pair[0]}</p>
         )
       )}
     </div>

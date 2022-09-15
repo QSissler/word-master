@@ -3,10 +3,19 @@ import { NavLink } from "react-router-dom";
 
 function ScoreBoard({ currentGame }) {
   return (
-    <div>
+    <div className="gameOver">
       <h2>GAME OVER!!!</h2>
-      <h4>Your score is: {currentGame.score} Congrats!</h4>
-      <NavLink exact to="/myProfile">
+      <h4>Your score is: {currentGame.score}</h4>
+      <p style={{ marginBottom: "40px" }}>Good job!</p>
+      <NavLink
+        style={{
+          textDecoration: "none",
+          color: "#103258",
+        }}
+        className="navLink"
+        exact
+        to="/myProfile"
+      >
         To see your results click here
       </NavLink>
     </div>

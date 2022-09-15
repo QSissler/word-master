@@ -27,11 +27,16 @@ function NameForm({ handleShowForm }) {
     <div>
       <form onSubmit={handleNewSubmitName}>
         <input
+          className="input2"
           type="text"
           value={userName}
           onChange={(e) => setUserName(e.target.value)}
         ></input>
-        <input type="submit"></input>
+        <input
+          style={{ marginLeft: "10px" }}
+          className="userButtons"
+          type="submit"
+        ></input>
       </form>
     </div>
   );
