@@ -31,7 +31,9 @@ function UserProfile() {
 
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>Hi {currentUser.name}!</h1>
+      <h1 style={{ textAlign: "center" }}>{currentUser.length === 0 ? "Sign In or Create New User" : `Hi ${currentUser.name}!`}</h1>
+      {currentUser.length === 0 ? null :
+      <div>
       <div className="profileButtons">
         {showForm ? <NameForm handleShowForm={handleShowForm} /> : null}
         <button className="userButtons" onClick={handleShowForm}>
@@ -48,6 +50,7 @@ function UserProfile() {
           <GameCard key={game.id} game={game} />
         ))}
       </div>
+      </div>}
     </div>
   );
 }
