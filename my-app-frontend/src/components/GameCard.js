@@ -9,11 +9,10 @@ function GameCard({ game }) {
       .then(setGameWords);
   }, []);
 
-  console.log(gameWords);
 
   return (
-    <div>
-      <h4>Game results</h4>
+    <div className="gameResults">
+      <h4>Game Results</h4>
       {gameWords.map((pair) =>
         pair[1] ? (
           <p style={{ color: "green" }}>{pair[0]}</p>

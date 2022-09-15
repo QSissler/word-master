@@ -5,9 +5,92 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url(https://media.istockphoto.com/photos/toy-blocks-picture-id960186126?b=1&k=20&m=960186126&s=612x612&w=0&h=mgVYfGnIobZWDW-sM-71O_wnX0eJcazYQ9UKU-att-0=);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.header {
+  display : flex;
+  flex-direction : column;
+  align-items: center;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+h1 {
+  color : #228be6;
+}
+
+.userBlock {
+  display : flex;
+  justify-content : space-around;
+  margin-top: 40px;
+}
+
+.user {
+  border-style: solid;
+  width: 15rem;
+  height: 15rem;
+  padding: 20px;
+  text-align: center;
+}
+
+.playButton{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.startButton {
+  padding : 15px;
+  font-size : 18px;
+  border-radius : 9px;
+  cursor : pointer;
+  background-color: #228be6;
+  color : white;
+  border: none;
+}
+
+.startButton:hover {
+  background-color : #5fabed;
+}
+
+.profileButtons {
+display: flex;
+margin: auto;
+width: 60%;
+border: 5px solid #FFFF00;
+padding: 10px;
+justify-content: space-around;
+}
+
+.allResults{
+  display: flex;
+  margin : 10px;
+}
+
+.gameResults {
+  border: solid;
+  width : 10rem;
+  text-align: center;
+  margin-top : 30px;
+  margin-left: 20px;
+
+}
+
+
