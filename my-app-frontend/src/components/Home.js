@@ -75,12 +75,11 @@ function Home() {
       ) : (
         <div>
           <div className="header">
-            <h1>Become The Next Word Master!</h1>
-            <p style={{ lineHeight: "2" }}>
-              Do you like learning new vocabulary in English? We have lots of
-              great word games for you to play. <br></br> You can choose from
-              lots of different topics and have fun playing games and learning
-              English at the same time.
+            <h1 style={{marginTop:"50px"}}>Become The Next Word Master!</h1>
+            <p style={{ lineHeight: "2", fontSize:"20px" }}>
+              Do you like learning new vocabulary in English? We have a
+              great word game for you to play. <br></br> Have fun playing games and learn
+              English at the same time!
             </p>
           </div>
           <div className="userBlock">
@@ -120,7 +119,7 @@ function Home() {
             </div>
           </div>
           <div className="playButton">
-            <button className="startButton" onClick={createGame}>
+            <button className="glow-on-hover" onClick={createGame}>
               Start Playing
             </button>
           </div>

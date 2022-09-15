@@ -11,7 +11,7 @@ function AllScores() {
   }, []);
 
   return (
-    <div>
+    <div className="scoreBoard">
       <h1>TOP SCORES</h1>
       {allScores.length > 0 ? <ScoreTable allScores={allScores} /> : null}
     </div>

@@ -12,7 +12,6 @@ function GameCard({ game }) {
   return (
     <div className="gameResults">
       <h4 className="gameCardText">Game Results</h4>
-      <p></p>
       {gameWords.map((pair) =>
         pair[1] ? (
           <p style={{ color: "#0f7c25", fontWeight: "bold" }}>{pair[0]}</p>

@@ -11,6 +11,7 @@ body {
   background-attachment: fixed;
   background-image: url(https://media.istockphoto.com/vectors/bokeh-background-vector-id1050080844?k=20&m=1050080844&s=612x612&w=0&h=TnptyuWmqAznhI-stYCnEMNfTPoOs8vo4ZHAT7Fso40=);
   font-family: "Sora", sans-serif;
+  min-height: 110vh;
 }
 
 code {
@@ -46,11 +47,13 @@ h1 {
 }
 
 .user {
-  border-style: solid;
+  border-style: dotted;
+  border-color: #228be6;
   width: 15rem;
   height: 15rem;
   padding: 20px;
   text-align: center;
+  color: #103258;
 }
 
 .playButton {
@@ -98,8 +101,10 @@ h1 {
 }
 
 .gameCardText {
-  text-shadow: 2px 2px 0px #ffffff;
-  color: #103258;
+  text-shadow: 2px 2px 0px #5fabed;
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
 }
 
 .input1 {
@@ -292,4 +297,99 @@ nav a:active {
 .gameImage {
   width: 300px;
   height: 300px;
+}
+
+.scoreBoard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+table {
+  table-layout: fixed;
+  width: 250px;
+  border-collapse: collapse;
+  text-align: center;
+  border-bottom: #0a2a45;
+}
+
+th, td {
+  padding: 15px;
+  border-bottom: solid #0a2a45;
+}
+
+th {
+  font-size: 20px;
+  color: white;
+  background-color: #7cabf2;
+  border-bottom: solid #0a2a45;
+}
+
+tr {
+  margin-bottom: 25px;
+  color: #0a2a45;
+  border: #0a2a45;
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #7cabf2;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: "Sora", sans-serif; 
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #7cabf2
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #7cabf2;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
