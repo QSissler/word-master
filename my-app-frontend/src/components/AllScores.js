@@ -9,7 +9,7 @@ function AllScores() {
       .then((res) => res.json())
       .then(setAllScores);
   }, []);
-
+  console.log(allScores);
   return (
     <div className="scoreBoard">
       <h1>TOP SCORES</h1>
