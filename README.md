@@ -1,4 +1,18 @@
-# Phase 3 Project Guidelines
+# Word Master Game
+
+
+## Team
+**Kristina Voroteliak**
+
+- [Profile](https://github.com/chrispavla)
+- [LinkedIn](https://www.linkedin.com/in/kristina-voroteliak/)
+- [Blog](https://dev.to/chrispavla)
+
+**Quinn Sissler**
+
+- [Profile](https://github.com/QSissler)
+- [LinkedIn](https://www.linkedin.com/in/quinn-sissler/)
+- [Blog](https://dev.to/qsissler)
 
 ## Learning Goals
 
