@@ -9,6 +9,7 @@ The user can:
 - Start a new game, where users practice English vocabulary by choosing the correct word that matches the picture;
 - View their score after finishing the game;
 - Update their username;
+- Delete the user from the database;
 - See all of their finished games with results;
 - View top 10 scores from all games played by other users;
 
