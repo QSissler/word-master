@@ -58,21 +58,16 @@ npm start
 ## Demo
 
 ### Home page
-![Disney-Home](https://user-images.githubusercontent.com/105557320/200914032-af20c794-053a-4996-9099-e6f5b382bc4d.png)
+<img width="1426" alt="Screen Shot 2022-11-10 at 4 19 58 PM" src="https://user-images.githubusercontent.com/105557320/201208935-40c1cdde-01e5-4ab7-8ca9-8fc351338c87.png">
 
-### All characters page
+### Game page
+<img width="1426" alt="Screen Shot 2022-11-10 at 4 25 25 PM" src="https://user-images.githubusercontent.com/105557320/201209133-24777782-c7e9-49cf-9355-975166ead0ce.png">
 
-![Disney-All](https://user-images.githubusercontent.com/105557320/200914071-ba411672-d890-4d35-8e76-a85a04d2ecfd.png)
+### User profile and game results page
+<img width="1426" alt="Screen Shot 2022-11-10 at 4 20 31 PM" src="https://user-images.githubusercontent.com/105557320/201209154-7e2a12d4-6103-44bc-b7a7-8b32c04cab56.png">
 
-### Character Details page
-![Disney-Details](https://user-images.githubusercontent.com/105557320/200914110-578b1101-8d13-4075-af77-4a1be5ff377a.png)
-
-### Favorite characters page 
-![Disney-Favorites (1)](https://user-images.githubusercontent.com/105557320/200914157-e46e1503-7bd0-46e8-ad4a-c29456b20129.png)
-
-### Submit a new character form page
-![Disney-Form](https://user-images.githubusercontent.com/105557320/200914204-3993750b-9ce8-43f3-ba83-bf59683fc412.png)
-
+### Top 10 scores page 
+<img width="1426" alt="Screen Shot 2022-11-10 at 4 23 47 PM" src="https://user-images.githubusercontent.com/105557320/201209181-016f3935-48b6-4d09-a8c7-d157a564e054.png">
 
 ## Team
 **Kristina Voroteliak**
