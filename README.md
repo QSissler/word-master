@@ -31,10 +31,10 @@ Install requirements
 bundle install
 ```
 
-cd into client
+cd into my-app-frontend
 
 ```
-cd client
+cd my-app-frontend
 ```
 
 Run server 
