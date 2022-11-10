@@ -1,6 +1,65 @@
 # Word Master Game
 
 
+## User Stories
+
+The user can:
+
+- View a list of all Disney characters;
+- View a show page for each character where you can see more details of that character;
+- Add a like to a character;
+- Add characters you favorite list;
+- Remove characters from your favorite list;
+- Submit a form to add new characters to the database;
+- Delete a character from the database;
+- Sort characters alphabetically by name;
+- Sort characters in descending order by the number of likes;
+- Toggle functionality to show only villain characters;
+- Search a charachter by name;
+
+## Set Up
+
+To run this project, first clone or fork repository:
+
+```
+git clone https://github.com/QSissler/word-master
+```
+
+Install requirements
+
+```
+bundle install
+```
+
+cd into client
+
+```
+cd client
+```
+
+Run server 
+
+```
+bundle exec rake server
+```
+
+Open the app in browser
+
+```
+npm start
+```
+
+
+## Technologies
+
+- Javascript
+- React
+- React Routher DOM
+- Ruby
+- Sinatra
+- Custom CSS
+
+
 ## Team
 **Kristina Voroteliak**
 
