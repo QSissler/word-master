@@ -7,10 +7,10 @@ The user can:
 
 - Create a new user or choose an existing user to play;
 - Start a new game, where users practice English vocabulary by choosing the correct word that matches the picture;
-- Users can view their score after finishing the game;
-- Users can update their username;
-- Users can see all of their finished games with results;
-- Users can view top 10 scores from all games played by other users;
+- View their score after finishing the game;
+- Update their username;
+- See all of their finished games with results;
+- View top 10 scores from all games played by other users;
 
 ## Set Up
 
