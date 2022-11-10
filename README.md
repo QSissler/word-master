@@ -59,6 +59,24 @@ npm start
 - Sinatra
 - Custom CSS
 
+## Demo
+
+### Home page
+![Disney-Home](https://user-images.githubusercontent.com/105557320/200914032-af20c794-053a-4996-9099-e6f5b382bc4d.png)
+
+### All characters page
+
+![Disney-All](https://user-images.githubusercontent.com/105557320/200914071-ba411672-d890-4d35-8e76-a85a04d2ecfd.png)
+
+### Character Details page
+![Disney-Details](https://user-images.githubusercontent.com/105557320/200914110-578b1101-8d13-4075-af77-4a1be5ff377a.png)
+
+### Favorite characters page 
+![Disney-Favorites (1)](https://user-images.githubusercontent.com/105557320/200914157-e46e1503-7bd0-46e8-ad4a-c29456b20129.png)
+
+### Submit a new character form page
+![Disney-Form](https://user-images.githubusercontent.com/105557320/200914204-3993750b-9ce8-43f3-ba83-bf59683fc412.png)
+
 
 ## Team
 **Kristina Voroteliak**
